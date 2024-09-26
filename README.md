@@ -3,44 +3,42 @@
 
 
 
-This repository contains a machine learning project aimed at predicting house prices based on various features such as location, size, and amenities. The project utilizes several machine learning algorithms, data preprocessing techniques, and feature engineering methods to build a robust predictive model.
-
 ## Overview
 
-The goal of this project is to accurately predict the price of houses based on historical data. The dataset contains various features related to real estate, including the number of bedrooms, bathrooms, area in square feet, and location. The project explores different models to find the best-performing one for price prediction.
+This project combines a machine learning model with a simple web app interface. It allows users to input details of a property, such as the number of bedrooms, bathrooms, square footage, and location, and provides a predicted house price using the pre-trained model.
 
 ### Key Features:
-- **Data Preprocessing:** Handling missing values, outliers, and feature scaling.
-- **Feature Engineering:** Creating new features that help improve the model's performance.
-- **Model Selection:** Training and evaluating multiple machine learning models such as linear regression, decision trees, random forest, and gradient boosting.
-- **Hyperparameter Tuning:** Optimizing model performance through grid search and cross-validation.
-- **Evaluation Metrics:** Using metrics such as mean absolute error (MAE), mean squared error (MSE), and R-squared to evaluate model accuracy.
+- **Data Preprocessing:** Data is cleaned and transformed before feeding into the model.
+- **Model Training:** The model is trained on a dataset of house prices in Bengaluru.
+- **Web Application:** A frontend interface where users can input house features and get predictions in real-time.
 
-## Project Structure
+## How It Works
 
-The project is organized as follows:
+1. **Frontend (Client):** 
+   - The `client/` folder contains the HTML, CSS, and JavaScript files that make up the user interface. Users can input house features such as the area, number of bedrooms, and bathrooms.
+   
+2. **Backend (Server):**
+   - The `server/` folder contains the Python Flask server that loads the machine learning model and handles prediction requests. 
+   - It uses `columns.json` to map input fields to the correct format and `pipeline.pickle` to preprocess input data and `model.pickle` to load the pre-trained machine learning model.
 
-- `data/`: Contains the dataset used for training and testing the model.
-- `notebooks/`: Jupyter notebooks for data exploration, preprocessing, and model building.
-- `src/`: Python scripts for data preprocessing, feature engineering, and model training.
-- `models/`: Saved models and related files for later use.
-- `README.md`: Project documentation (this file).
+3. **Machine Learning:**
+   - The Jupyter notebook `Bengaluru_House.ipynb` contains the steps for data exploration, model training, and evaluation. The trained model is then serialized into `model.pickle`.
 
-## Requirements
+## Setup Instructions
 
-To run this project, you'll need the following Python packages:
+### Prerequisites
 
-- `pandas`
-- `numpy`
-- `scikit-learn`
-- `matplotlib`
-- `seaborn`
-- `xgboost`
+- Python 3.x
+- Flask
+- Scikit-learn
+- Pandas
+- Numpy
 
-You can install the required dependencies by running:
+You can install the required dependencies using:
 
 ```bash
-pip install pandas numpy scikit-learn matplotlib seaborn xgboost
+pip install -r requirements.txt
+
 
 
 
