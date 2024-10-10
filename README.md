@@ -1,7 +1,7 @@
 # House-Price-Prediction-2
-![image](https://github.com/user-attachments/assets/401459c3-9dd4-48e7-a3a5-417263e61691)
 ![ScreenRecording2024-10-10175337-ezgif com-video-to-gif-converter (2)](https://github.com/user-attachments/assets/29b61be7-b946-4a3c-82c6-407d7b4c7217)
 
+![image](https://github.com/user-attachments/assets/4629de41-edf5-4c1e-99d4-b66b45b43a2d)
 
 
 https://github.com/guhan-tofu/House-Price-Prediction-2/blob/main/Screen%20Recording%202024-10-10%20175337.mp4
